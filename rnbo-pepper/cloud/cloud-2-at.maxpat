@@ -102,7 +102,7 @@
 						}
 , 						{
 							"number" : 8,
-							"data" : [ 5, "obj-41", "flonum", "float", 600.0, 5, "obj-19", "flonum", "float", 54.0, 5, "obj-17", "flonum", "float", 1.0, 5, "obj-36", "flonum", "float", 115.0, 5, "obj-22", "flonum", "float", 95.0, 5, "obj-46", "flonum", "float", 1.0, 5, "obj-44", "flonum", "float", 0.0, 5, "<invalid>", "flonum", "float", 78.0, 5, "obj-49", "flonum", "float", 2.4, 5, "obj-53", "flonum", "float", 1.0, 5, "obj-55", "flonum", "float", 1.0, 5, "<invalid>", "flonum", "float", 0.07, 5, "<invalid>", "flonum", "float", 100.0, 5, "<invalid>", "flonum", "float", 3.0, 5, "<invalid>", "flonum", "float", 0.997, 5, "<invalid>", "flonum", "float", 0.2, 5, "<invalid>", "flonum", "float", 23.0, 5, "<invalid>", "umenu", "int", 2, 5, "<invalid>", "flonum", "float", 80.0, 5, "<invalid>", "flonum", "float", 3.0, 5, "<invalid>", "umenu", "int", 22, 5, "obj-89", "flonum", "float", 13071.145507999999609, 5, "obj-88", "flonum", "float", 374.535155999999972, 5, "obj-83", "flonum", "float", 1.0, 5, "<invalid>", "flonum", "float", 0.6, 5, "<invalid>", "flonum", "float", 69.0, 5, "<invalid>", "flonum", "float", 1.0, 5, "obj-15", "number~", "list", 0.0 ]
+							"data" : [ 5, "obj-41", "flonum", "float", 40.0, 5, "obj-36", "flonum", "float", 8000.0, 5, "obj-22", "flonum", "float", 99.0, 5, "obj-55", "flonum", "float", 0.400000005960464, 5, "obj-19", "flonum", "float", 80.0, 5, "obj-17", "flonum", "float", 90.0, 5, "obj-49", "flonum", "float", 3.0, 5, "obj-46", "flonum", "float", 1.0, 5, "obj-44", "flonum", "float", 0.0, 5, "obj-53", "flonum", "float", 1.0, 5, "obj-89", "flonum", "float", 1142.1541748046875, 5, "obj-88", "flonum", "float", 424.761932373046875, 5, "obj-83", "flonum", "float", 1.0, 5, "obj-15", "flonum", "float", 1.0, 5, "obj-14", "flonum", "float", 0.0, 5, "obj-8", "flonum", "float", 0.0, 5, "obj-5", "flonum", "float", 0.5 ]
 						}
 , 						{
 							"number" : 9,
@@ -25186,11 +25186,19 @@
 
 							}
 ,
-							"grain_params/durcurve" : 							{
+							"grain_params/speedmin" : 							{
 								"value" : 0.0
 							}
 ,
-							"grain_params/posmin" : 							{
+							"grain_params/posmax" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/durmin" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/speedmax" : 							{
 								"value" : 0.0
 							}
 ,
@@ -25202,31 +25210,7 @@
 								"value" : 0.0
 							}
 ,
-							"grain_params/durmin" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/posmax" : 							{
-								"value" : 0.0
-							}
-,
 							"grain_params/freqmax" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/revmax" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/ampmax" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/ampcurve" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/speedmin" : 							{
 								"value" : 0.0
 							}
 ,
@@ -25235,6 +25219,18 @@
 							}
 ,
 							"grain_params/revmin" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/revcurve" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/ampcurve" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/posmin" : 							{
 								"value" : 0.0
 							}
 ,
@@ -25251,11 +25247,19 @@
 							}
 ,
 							"density" : 							{
-								"value" : 4.0
+								"value" : 40.0
 							}
 ,
 							"freqvar" : 							{
-								"value" : 60.0
+								"value" : 90.0
+							}
+,
+							"grain_params/freqcurve" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/panmax" : 							{
+								"value" : 0.0
 							}
 ,
 							"grain_params/density" : 							{
@@ -25263,7 +25267,7 @@
 							}
 ,
 							"position" : 							{
-								"value" : 728.0
+								"value" : 1142.1541748046875
 							}
 ,
 							"speedcurve" : 							{
@@ -25283,47 +25287,43 @@
 							}
 ,
 							"amplitude" : 							{
-								"value" : 0.680000007152557
+								"value" : 1.0
 							}
 ,
 							"posvar" : 							{
-								"value" : 0.0
+								"value" : 424.761932373046875
 							}
 ,
 							"sampspeed" : 							{
 								"value" : 1.0
 							}
 ,
-							"grain_params/speedmax" : 							{
+							"grain_params/ampmax" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/revmax" : 							{
+								"value" : 0.0
+							}
+,
+							"grain_params/durcurve" : 							{
 								"value" : 0.0
 							}
 ,
 							"freqcurve" : 							{
-								"value" : 6.800000190734863
+								"value" : 3.0
 							}
 ,
 							"durcurve" : 							{
-								"value" : 0.300000011920929
+								"value" : 0.400000005960464
 							}
 ,
 							"durvar" : 							{
-								"value" : 50.0
+								"value" : 99.0
 							}
 ,
 							"duration" : 							{
-								"value" : 1000.0
-							}
-,
-							"grain_params/panmax" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/freqcurve" : 							{
-								"value" : 0.0
-							}
-,
-							"grain_params/revcurve" : 							{
-								"value" : 0.0
+								"value" : 5000.0
 							}
 ,
 							"grain_params/freqmin" : 							{
@@ -25335,7 +25335,7 @@
 							}
 ,
 							"frequency" : 							{
-								"value" : 5.0
+								"value" : 80.0
 							}
 ,
 							"__presetid" : "clouds"
@@ -25384,11 +25384,19 @@
 
 										}
 ,
-										"grain_params/durcurve" : 										{
+										"grain_params/speedmin" : 										{
 											"value" : 0.0
 										}
 ,
-										"grain_params/posmin" : 										{
+										"grain_params/posmax" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/durmin" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/speedmax" : 										{
 											"value" : 0.0
 										}
 ,
@@ -25400,31 +25408,7 @@
 											"value" : 0.0
 										}
 ,
-										"grain_params/durmin" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/posmax" : 										{
-											"value" : 0.0
-										}
-,
 										"grain_params/freqmax" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/revmax" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/ampmax" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/ampcurve" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/speedmin" : 										{
 											"value" : 0.0
 										}
 ,
@@ -25433,6 +25417,18 @@
 										}
 ,
 										"grain_params/revmin" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/revcurve" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/ampcurve" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/posmin" : 										{
 											"value" : 0.0
 										}
 ,
@@ -25449,11 +25445,19 @@
 										}
 ,
 										"density" : 										{
-											"value" : 4.0
+											"value" : 40.0
 										}
 ,
 										"freqvar" : 										{
-											"value" : 60.0
+											"value" : 90.0
+										}
+,
+										"grain_params/freqcurve" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/panmax" : 										{
+											"value" : 0.0
 										}
 ,
 										"grain_params/density" : 										{
@@ -25461,7 +25465,7 @@
 										}
 ,
 										"position" : 										{
-											"value" : 728.0
+											"value" : 1142.1541748046875
 										}
 ,
 										"speedcurve" : 										{
@@ -25481,47 +25485,43 @@
 										}
 ,
 										"amplitude" : 										{
-											"value" : 0.680000007152557
+											"value" : 1.0
 										}
 ,
 										"posvar" : 										{
-											"value" : 0.0
+											"value" : 424.761932373046875
 										}
 ,
 										"sampspeed" : 										{
 											"value" : 1.0
 										}
 ,
-										"grain_params/speedmax" : 										{
+										"grain_params/ampmax" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/revmax" : 										{
+											"value" : 0.0
+										}
+,
+										"grain_params/durcurve" : 										{
 											"value" : 0.0
 										}
 ,
 										"freqcurve" : 										{
-											"value" : 6.800000190734863
+											"value" : 3.0
 										}
 ,
 										"durcurve" : 										{
-											"value" : 0.300000011920929
+											"value" : 0.400000005960464
 										}
 ,
 										"durvar" : 										{
-											"value" : 50.0
+											"value" : 99.0
 										}
 ,
 										"duration" : 										{
-											"value" : 1000.0
-										}
-,
-										"grain_params/panmax" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/freqcurve" : 										{
-											"value" : 0.0
-										}
-,
-										"grain_params/revcurve" : 										{
-											"value" : 0.0
+											"value" : 5000.0
 										}
 ,
 										"grain_params/freqmin" : 										{
@@ -25533,7 +25533,7 @@
 										}
 ,
 										"frequency" : 										{
-											"value" : 5.0
+											"value" : 80.0
 										}
 ,
 										"__presetid" : "clouds"
