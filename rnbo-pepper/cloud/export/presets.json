@@ -1,0 +1,70 @@
+[
+  {
+    "name": "clouds",
+    "preset": {
+      "__sps": {
+        "amp[1]": {},
+        "density_dur": {},
+        "freq": {},
+        "pan[1]": {},
+        "pos[1]": {},
+        "samples": {},
+        "speed": {}
+      },
+      "amp": {
+        "value": 0.800000011920929
+      },
+      "ampcurve": {
+        "value": 0
+      },
+      "ampvar": {
+        "value": 10
+      },
+      "density": {
+        "value": 60
+      },
+      "duration": {
+        "value": 200
+      },
+      "durcurve": {
+        "value": 0.009999999776483
+      },
+      "durvar": {
+        "value": 100
+      },
+      "osccurve": {
+        "value": 0.400000005960464
+      },
+      "oscfreq": {
+        "value": 1
+      },
+      "oscvar": {
+        "value": 0
+      },
+      "pan": {
+        "value": 50
+      },
+      "pos": {
+        "value": 0.1
+      },
+      "poscurve": {
+        "value": 1
+      },
+      "posms": {
+        "value": 361
+      },
+      "posvar": {
+        "value": 1
+      },
+      "sampcurve": {
+        "value": 0
+      },
+      "sampspeed": {
+        "value": 1
+      },
+      "sampvar": {
+        "value": 50
+      }
+    }
+  }
+]
