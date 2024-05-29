@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16920\viewh16980\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 --> Generating C\
+\
+=== Signal Order ===\
+__sample~f\
+__phasor_k~f \{frequency:0.0 phase:0.0\}\
+__varread~f \{var_id:0OinR7tz\}\
+__mul~f\
+__phasor_k~f \{frequency:20.0 phase:0.0\}\
+__varread~f \{var_id:WOnFwMPY\}\
+__del1~f\
+__lt~f\
+__samphold~f\
+__fma~f\
+__var_k~f \{k:22.05 step:0 reverse:False\}\
+__mul~f\
+__varread~f \{var_id:QvFGSYly\}\
+__min~f\
+__var_k~f \{k:0.0 step:0 reverse:False\}\
+__max~f\
+__cast~fi\
+__tabread~if \{table:playobject table_id:HLixMWvn\}\
+__var_k~f \{k:512.0 step:0 reverse:False\}\
+__mul~f\
+__varread~f \{var_id:dNP32GIA\}\
+__min~f\
+__var_k~f \{k:0.0 step:0 reverse:False\}\
+__max~f\
+__cast~fi\
+__tabread~if \{table:wndw table_id:k074jIoi\}\
+__mul~f\
+__varread~f \{var_id:ziDbjRpM\}\
+__del1~f\
+__lt~f\
+__samphold~f\
+__sample~f\
+__add~f\
+__phasor_k~f \{frequency:20.0 phase:0.0\}\
+__varread~f \{var_id:I5gKI3N0\}\
+__del1~f\
+__lt~f\
+__samphold~f\
+__fma~f\
+__var_k~f \{k:22.05 step:0 reverse:False\}\
+__mul~f\
+__varread~f \{var_id:7dGtem0t\}\
+__min~f\
+__var_k~f \{k:0.0 step:0 reverse:False\}\
+__max~f\
+__cast~fi\
+__tabread~if \{table:playobject table_id:HLixMWvn\}\
+__var_k~f \{k:512.0 step:0 reverse:False\}\
+__mul~f\
+__varread~f \{var_id:ZKOAE9iq\}\
+__min~f\
+__var_k~f \{k:0.0 step:0 reverse:False\}\
+__max~f\
+__cast~fi\
+__tabread~if \{table:wndw table_id:k074jIoi\}\
+__mul~f\
+__varread~f \{var_id:FRKualoE\}\
+__del1~f\
+__lt~f\
+__samphold~f\
+__sample~f\
+__add~f\
+AVX: 174.0 cycles / 21.75 cycles per frame\
+     512 frames @ 1000MHz >= 11.14us\
+SSE: 157.0 cycles / 39.25 cycles per frame\
+     512 frames @ 1000MHz >= 20.10us\
+CPU% #Objs Object Type      Performance\
+==== ===== ================ ===========\
+ 1%  3     __sample~f       Counter(\{'avx': 3, 'sse': 3\})\
+22%  3     __phasor_k~f     Counter(\{'avx': 39, 'sse': 30\})\
+ 5%  9     __varread~f      Counter(\{'avx': 9, 'sse': 9\})\
+20%  7     __mul~f          Counter(\{'avx': 35, 'sse': 35\})\
+11%  4     __del1~f         Counter(\{'avx': 20, 'sse': 8\})\
+ 2%  4     __lt~f           Counter(\{'avx': 4, 'sse': 4\})\
+ 0%  4     __samphold~f     Counter(\{'sse': 12\})\
+ 5%  2     __fma~f          Counter(\{'avx': 10, 'sse': 10\})\
+ 2%  8     __var_k~f        Counter(\{'avx': 4.0, 'sse': 4.0\})\
+ 6%  4     __min~f          Counter(\{'avx': 12, 'sse': 12\})\
+ 6%  4     __max~f          Counter(\{'avx': 12, 'sse': 12\})\
+ 2%  4     __cast~fi        Counter(\{'avx': 4, 'sse': 4\})\
+ 9%  4     __tabread~if     Counter(\{'avx': 16, 'sse': 8\})\
+ 3%  2     __add~f          Counter(\{'avx': 6, 'sse': 6\})\
+--> Generating Daisy module\
+  1) [91mError[0m c2daisy: Unknown parameter "Button1"\
+Total compile time: 164.15ms\
+Compiling.../Users/atau/Library/plugdata/Toolchain/bin/arm-none-eabi-gcc -c -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard -DUSE_HAL_DRIVER -DSTM32H750xx -DHSE_VALUE=16000000  -DCORE_CM7 -DSTM32H750IB -DARM_MATH_CM7 -DUSE_FULL_LL_DRIVER -include stm32h7xx.h -I../../libdaisy -I../../libdaisy/src/ -I../../libdaisy/src/sys -I../../libdaisy/src/usbd -I../../libdaisy/src/usbh -I../../libdaisy/Drivers/CMSIS/Include/ -I../../libdaisy/Drivers/CMSIS/DSP/Include -I../../libdaisy/Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../libdaisy/Drivers/STM32H7xx_HAL_Driver/Inc/ -I../../libdaisy/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../libdaisy/Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../../libdaisy/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../../libdaisy/core/ -I../../libdaisy/Middlewares/Third_Party/FatFs/src -O2 -Wall -Wno-missing-attributes -fasm -fdata-sections -ffunction-sections -Wno-stringop-overflow -g -ggdb -MMD -MP -MF"build/startup_stm32h750xx.d" -std=gnu11 -Wa,-a,-ad,-alms=build/startup_stm32h750xx.lst ../../libdaisy/core/startup_stm32h750xx.c -o build/startup_stm32h750xx.o\
+make: *** No rule to make target 'build/HeavyDaisy_grancontrol4c2.o', needed by 'build/Heavy_grancontrol4c2.elf'.  Stop.\
+make: *** Waiting for unfinished jobs....\
+}
