@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 118.0, 379.0, 263.0 ],
+		"rect" : [ 605.0, 1026.0, 196.0, 86.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 132.0, 100.0, 50.0, 22.0 ],
+					"patching_rect" : [ 17.0, 7.0, 50.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 117.0, 152.0, 24.0, 24.0 ]
+					"patching_rect" : [ 17.0, 37.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -69,7 +69,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 230.0, 204.0, 100.0, 22.0 ],
+					"patching_rect" : [ 68.0, 64.0, 100.0, 22.0 ],
 					"text" : "sfrecord~ 4"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 230.0, 80.0, 100.0, 22.0 ],
+					"patching_rect" : [ 68.0, 7.0, 100.0, 22.0 ],
 					"text" : "adc~ 1 2 3 4"
 				}
 
