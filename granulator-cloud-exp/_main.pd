@@ -1,4 +1,4 @@
-#N canvas 301 37 1076 774 12;
+#N canvas 1151 177 1076 774 12;
 #X declare -path .;
 #X declare -path sounds;
 #N canvas 0 23 588 274 LICENSE 0;
@@ -87,7 +87,7 @@
 #X connect 27 0 17 0;
 #X connect 28 0 17 0;
 #X restore 273 234 pd sampleloader;
-#N canvas 413 231 709 381 granular 1;
+#N canvas 317 761 839 397 granular 1;
 #X obj 483 25 catch~ gdur;
 #X obj 365 24 catch~ control;
 #X msg 155 141 0;
@@ -118,6 +118,13 @@
 #X obj 396 220 grain-cloud~;
 #X obj 524 163 grain-cloud~;
 #X obj 524 218 grain-cloud~;
+#X floatatom 622 71 10 0 0 0 - - - 0;
+#X obj 752 179 snapshot~;
+#X obj 756 65 metro 100;
+#X obj 755 30 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X floatatom 752 203 5 0 0 0 - - - 0;
+#X obj 671 178 snapshot~;
+#X floatatom 671 202 8 0 0 0 - - - 0;
 #X connect 0 0 21 2;
 #X connect 0 0 23 2;
 #X connect 0 0 24 2;
@@ -126,6 +133,7 @@
 #X connect 0 0 27 2;
 #X connect 0 0 28 2;
 #X connect 0 0 29 2;
+#X connect 0 0 31 0;
 #X connect 1 0 11 0;
 #X connect 1 0 21 1;
 #X connect 1 0 23 1;
@@ -135,6 +143,7 @@
 #X connect 1 0 27 1;
 #X connect 1 0 28 1;
 #X connect 1 0 29 1;
+#X connect 1 0 35 0;
 #X connect 2 0 21 0;
 #X connect 3 0 24 0;
 #X connect 4 0 28 0;
@@ -159,6 +168,7 @@
 #X connect 19 0 15 0;
 #X connect 20 0 16 0;
 #X connect 21 0 19 0;
+#X connect 21 0 20 0;
 #X connect 22 0 21 3;
 #X connect 22 0 23 3;
 #X connect 22 0 24 3;
@@ -167,13 +177,12 @@
 #X connect 22 0 27 3;
 #X connect 22 0 28 3;
 #X connect 22 0 29 3;
-#X connect 23 0 19 0;
-#X connect 24 0 19 0;
-#X connect 25 0 19 0;
-#X connect 26 0 20 0;
-#X connect 27 0 20 0;
-#X connect 28 0 20 0;
-#X connect 29 0 20 0;
+#X connect 22 0 30 0;
+#X connect 31 0 34 0;
+#X connect 32 0 31 0;
+#X connect 32 0 35 0;
+#X connect 33 0 32 0;
+#X connect 35 0 36 0;
 #X restore 225 469 pd granular;
 #N canvas 0 37 545 181 LOADBANGS 0;
 #X obj 172 140 s gain;
