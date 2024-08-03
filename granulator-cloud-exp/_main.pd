@@ -161,6 +161,7 @@
 #X connect 23 0 14 2;
 #X connect 23 0 15 2;
 #X connect 23 0 10 2;
+#X connect 23 0 16 2;
 #X restore 225 469 pd granular;
 #N canvas 0 37 545 181 LOADBANGS 0;
 #X obj 172 140 s gain;
