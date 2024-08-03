@@ -17,7 +17,7 @@
 #X text 121 178 gdur;
 #X text 31 178 position;
 #X text 31 16 Trigger gain with message: position (ms) \, grandur \, transposition (cts), f 71;
-#X obj 121 288 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 132 291 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 401 80 spigot;
 #X obj 398 663 outlet;
 #X text 449 662 overflow;
@@ -221,10 +221,15 @@
 #X connect 35 0 5 0;
 #X restore 117 130 pd ramp-calc;
 #X text 192 180 linetime;
-#X obj 174 318 samplerate~;
-#X obj 174 342 / 1000;
-#X floatatom 174 366 5 0 0 0 - - - 0;
-#X obj 174 293 loadbang;
+#X obj 260 321 samplerate~;
+#X obj 260 345 / 1000;
+#X floatatom 260 369 5 0 0 0 - - - 0;
+#X obj 260 296 loadbang;
+#X obj 198 514 print triangle;
+#X obj 28 74 spigot;
+#X obj 132 315 flip 1;
+#X obj 132 339 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 488 57 inlet;
 #X connect 1 0 3 0;
 #X connect 2 0 5 0;
 #X connect 3 0 2 0;
@@ -233,6 +238,7 @@
 #X connect 6 0 5 1;
 #X connect 7 0 6 0;
 #X connect 8 0 7 1;
+#X connect 8 0 36 0;
 #X connect 10 0 7 0;
 #X connect 10 0 4 0;
 #X connect 10 1 18 0;
@@ -243,9 +249,10 @@
 #X connect 13 0 1 0;
 #X connect 14 0 4 1;
 #X connect 18 0 19 1;
+#X connect 18 0 38 0;
 #X connect 19 0 20 0;
 #X connect 22 0 19 0;
-#X connect 22 0 11 0;
+#X connect 22 0 37 0;
 #X connect 23 0 27 0;
 #X connect 23 1 28 0;
 #X connect 26 0 23 1;
@@ -257,3 +264,8 @@
 #X connect 33 0 34 0;
 #X connect 34 0 3 1;
 #X connect 35 0 32 0;
+#X connect 37 0 11 0;
+#X connect 38 0 39 0;
+#X connect 39 0 37 1;
+#X connect 40 0 27 1;
+#X connect 40 0 28 1;
