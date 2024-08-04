@@ -1323,6 +1323,8 @@
 #X connect 171 0 172 0;
 #X connect 172 0 175 0;
 #X connect 173 0 171 0;
+#X connect 173 0 176 0;
+#X connect 173 0 158 0;
 #X connect 174 0 168 0;
 #X connect 175 0 170 1;
 #X connect 176 0 189 0;
