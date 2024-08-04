@@ -1280,9 +1280,9 @@
 #X connect 205 1 204 0;
 #X connect 205 1 214 0;
 #X connect 214 0 44 0;
-#X connect 214 0 44 1;
-#X connect 214 1 201 0;
-#X connect 214 1 200 0;
+#X connect 214 1 44 1;
+#X connect 214 2 201 0;
+#X connect 214 2 200 0;
 #X connect 215 0 214 0;
 #X connect 216 0 215 0;
 #X connect 217 0 215 0;
