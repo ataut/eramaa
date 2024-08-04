@@ -1357,9 +1357,8 @@
 #X connect 189 0 199 0;
 #X connect 190 0 188 0;
 #X connect 191 0 190 0;
-#X connect 194 0 196 0;
-#X connect 195 0 158 0;
-#X connect 195 0 160 0;
+#X connect 194 0 158 0;
+#X connect 194 0 160 0;
 #X connect 197 0 202 0;
 #X connect 198 0 196 0;
 #X connect 200 0 201 0;
