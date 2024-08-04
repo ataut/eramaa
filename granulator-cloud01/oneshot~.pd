@@ -15,12 +15,12 @@
 #X obj 116 99 threshold~ 1 0 0.1 0;
 #X text 105 47 ramptime in;
 #X msg 51 71 0 \, 1 \$1;
-#X text 49 15 ONE SHOT RAMO - instead of repeating phasor;
 #X text 179 124 when ramp reaches top;
 #X text 221 331 busy flag;
 #X obj 315 154 loadbang;
 #X text 382 154 initialise as not busy;
 #X text 176 140 reset line to zero;
+#X text 49 15 ONE SHOT RAMP - instead of repeating phasor;
 #X connect 0 0 12 0;
 #X connect 1 0 7 0;
 #X connect 2 0 3 0;
@@ -36,4 +36,4 @@
 #X connect 12 0 13 0;
 #X connect 13 0 2 0;
 #X connect 15 0 12 0;
-#X connect 19 0 1 0;
+#X connect 18 0 1 0;
