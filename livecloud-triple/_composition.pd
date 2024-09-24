@@ -1,0 +1,2 @@
+#N canvas 1904 600 454 444 12;
+#X msg 76 112 \; doublebuf1-density 3 \; doublebuf1-metro 500 \; doublebuf1-freeze 0 \; doublebuf1-stretch 1 \; doublebuf1-stretchvar 25 \; doublebuf1-stretch 1 \; doublebuf1-pos 0 \; doublebuf1-posvar 50 \; doublebuf1-dur 1000 \; doublebuf1-durvar 20 \; doublebuf1-transp 0 \; doublebuf1-transpvar 0 \; doublebuf1-pitchquant 0 \;;
