@@ -349,7 +349,7 @@
 #X obj 562 589 cloud-chan doublebuf1;
 #X floatatom 652 566 5 0 0 0 - - - 0;
 #X obj 693 567 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X obj 582 663 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10400 1;
+#X obj 582 663 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 582 799 5 0 0 1 _db - - 0;
 #X obj 612 661 vu 19 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
 #X obj 665 661 vu 19 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
@@ -403,11 +403,11 @@
 #X text 527 142 gran dur, f 4;
 #X obj 449 272 cloud-player doublebuf3;
 #X obj 618 272 cloud-params doublebuf3, f 59;
-#X obj 737 665 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10900 1;
+#X obj 737 665 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 737 801 5 0 0 1 _db - - 0;
-#X obj 896 665 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10900 1;
+#X obj 896 665 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 896 801 5 0 0 1 _db - - 0;
-#X obj 516 549 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12700 0;
+#X obj 516 549 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12600 0;
 #X obj 516 568 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #fce014 #000000 #000000 1700 1;
 #X obj 513 589 adc~ 1;
 #N canvas 76 279 561 362 stereo-wetdry 0;
@@ -496,11 +496,11 @@
 #X obj 159 39 inlet~;
 #X obj 208 39 inlet~;
 #X text 173 10 wet in;
-#X obj 261 114 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12700 0;
+#X obj 261 114 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12600 0;
 #X floatatom 258 135 5 0 0 0 - - - 0;
 #X obj 258 39 inlet;
 #X text 250 10 dry/wet;
-#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10400 1;
+#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 397 197 5 0 0 1 _db - - 0;
 #X obj 105 311 outlet;
 #X obj 242 311 outlet;
@@ -628,7 +628,7 @@
 #X floatatom 258 135 5 0 0 0 - - - 0;
 #X obj 258 39 inlet;
 #X text 250 10 dry/wet;
-#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10900 1;
+#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 397 197 5 0 0 1 _db - - 0;
 #X obj 105 311 outlet;
 #X obj 242 311 outlet;
@@ -757,7 +757,7 @@
 #X floatatom 258 135 5 0 0 0 - - - 0;
 #X obj 258 39 inlet;
 #X text 250 10 dry/wet;
-#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10900 1;
+#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 397 197 5 0 0 1 _db - - 0;
 #X obj 105 311 outlet;
 #X obj 242 311 outlet;
@@ -1150,9 +1150,15 @@
 #X msg 1255 545 start;
 #X msg 1262 573 stop;
 #X obj 1239 623 writesf~ 8, f 15;
-#X msg 1207 500 open /tmp/foo2.wav;
 #X text 510 337 set gain 5;
 #X text 1047 524 check wet/dry meter;
+#X text 1164 295 compress input, f 29;
+#X text 1167 328 slap out clar up, f 29;
+#X text 409 391 akiko 10;
+#X text 406 413 quentin 3;
+#X text 413 321 find a nonlinear response, f 10;
+#X text 383 452 tape bande;
+#X msg 1207 500 open /tmp/foo3.wav;
 #X connect 3 0 2 0;
 #X connect 5 0 72 5;
 #X connect 6 0 72 6;
@@ -1326,4 +1332,4 @@
 #X connect 150 0 151 5;
 #X connect 155 0 157 0;
 #X connect 156 0 157 0;
-#X connect 158 0 157 0;
+#X connect 166 0 157 0;
