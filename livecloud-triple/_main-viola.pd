@@ -610,7 +610,7 @@
 #X connect 42 0 32 1;
 #X restore 337 148 pd parameter-monitor;
 #X f 21;
-#X obj 337 126 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
+#X obj 337 126 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 678 96 r cv6;
 #X obj 720 96 r cv7;
 #X text 992 492 knob 7 = dry;

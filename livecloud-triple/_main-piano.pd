@@ -403,7 +403,7 @@
 #X msg 992 485 \; map3 send symbol dry \; map3 min -99 \; map3 max 18 \; map3 curve 0.5 \;, f 22;
 #X msg 992 566 \; map4 send symbol wet \; map4 min -99 \; map4 max 18 \; map4 curve 0.5 \;, f 22;
 #X obj 992 460 loadbang;
-#X obj 362 116 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
+#X obj 362 116 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 703 77 r cv6;
 #X obj 745 77 r cv7;
 #X text 992 418 knob 7 = dry;
