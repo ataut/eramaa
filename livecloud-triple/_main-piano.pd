@@ -981,7 +981,6 @@
 #X connect 15 0 45 4;
 #X connect 16 0 38 0;
 #X connect 17 0 18 0;
-#X connect 18 0 89 0;
 #X connect 19 0 45 2;
 #X connect 20 0 45 9;
 #X connect 22 0 45 1;

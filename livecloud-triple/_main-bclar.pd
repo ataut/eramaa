@@ -908,7 +908,6 @@
 #X connect 15 0 46 4;
 #X connect 16 0 38 0;
 #X connect 17 0 18 0;
-#X connect 18 0 94 0;
 #X connect 19 0 46 2;
 #X connect 20 0 46 9;
 #X connect 22 0 46 1;
