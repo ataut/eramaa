@@ -458,9 +458,11 @@
 #X obj 484 118 change;
 #X obj 684 118 change;
 #X obj 880 114 change;
-#X text 41 301 EAVI 5 Piano;
 #X msg 38 330 symbol E2:16:01:35:30:30;
-#X msg 294 224 symbol E2:16:01:35:30:30;
+#X text 43 366 EAVI 8 Piano;
+#X text 41 301 EAVI 5 Piano;
+#X msg 40 395 symbol E2:16:01:38:30:30;
+#X msg 294 224 symbol E2:16:01:38:30:30;
 #X connect 0 0 1 0;
 #X connect 2 0 6 0;
 #X connect 5 0 11 0;
@@ -472,7 +474,7 @@
 #X connect 11 1 25 0;
 #X connect 11 2 26 0;
 #X connect 11 3 27 0;
-#X connect 12 0 46 0;
+#X connect 12 0 48 0;
 #X connect 12 1 13 0;
 #X connect 13 0 18 0;
 #X connect 14 0 15 0;
@@ -496,7 +498,7 @@
 #X connect 41 0 14 0;
 #X connect 42 0 20 0;
 #X connect 43 0 31 0;
-#X connect 46 0 19 0;
+#X connect 48 0 19 0;
 #X restore 36 123 pd ble-midi;
 #X text 794 67 knob 7 = dry;
 #X text 794 89 knob 8 = wet;
