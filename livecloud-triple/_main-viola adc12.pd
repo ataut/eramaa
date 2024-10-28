@@ -895,8 +895,8 @@
 #X obj 571 622 dac~ 1 2;
 #X obj 539 19 r button4;
 #X obj 539 43 select 1;
-#X obj 38 274 adc~ 1;
-#X obj 572 552 adc~ 1;
+#X obj 572 552 adc~ 1 2;
+#X obj 38 274 adc~ 1 2;
 #X connect 3 0 2 0;
 #X connect 4 0 45 5;
 #X connect 5 0 45 6;
@@ -970,7 +970,10 @@
 #X connect 99 0 50 1;
 #X connect 110 0 111 0;
 #X connect 111 0 37 3;
-#X connect 112 0 79 0;
-#X connect 112 0 80 0;
-#X connect 113 0 81 0;
+#X connect 112 0 81 0;
+#X connect 112 1 81 0;
+#X connect 113 0 79 0;
+#X connect 113 0 80 0;
+#X connect 113 1 79 0;
+#X connect 113 1 80 0;
 #X coords 0 0 1 1 85 60 0;
