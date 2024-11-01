@@ -1,4 +1,4 @@
-#N canvas 28 37 1402 882 12;
+#N canvas 67 37 1402 882 12;
 #X declare -path .;
 #N canvas 0 37 588 274 LICENSE 0;
 #X text 79 84 (c) 2008 Reality Jockey;
@@ -195,7 +195,7 @@
 #X obj 562 589 cloud-chan doublebuf1;
 #X floatatom 652 566 5 0 0 0 - - - 0;
 #X obj 693 567 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X obj 582 663 vsl 20 128 -99 18 0 1 \$0-gain doublebuf1-gain gain -7 -18 0 14 #fca85c #000000 #000000 6600 1;
+#X obj 582 663 vsl 20 128 -99 18 0 1 \$0-gain doublebuf1-gain gain -7 -18 0 14 #fca85c #000000 #000000 10800 1;
 #X floatatom 582 799 5 0 0 1 _db - - 0;
 #X obj 612 661 vu 19 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
 #X obj 665 661 vu 19 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
@@ -253,7 +253,7 @@
 #X floatatom 737 801 5 0 0 1 _db - - 0;
 #X obj 896 665 vsl 20 128 -99 18 0 1 \$0-gain doublebuf3-gain gain -7 -18 0 14 #fca85c #000000 #000000 0 1;
 #X floatatom 896 801 5 0 0 1 _db - - 0;
-#X obj 516 549 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12600 0;
+#X obj 516 549 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 6500 0;
 #X obj 516 568 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #fce014 #000000 #000000 1700 1;
 #X obj 513 589 adc~ 1;
 #N canvas 76 279 561 362 stereo-wetdry 0;
@@ -342,11 +342,11 @@
 #X obj 159 39 inlet~;
 #X obj 208 39 inlet~;
 #X text 173 10 wet in;
-#X obj 261 114 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 12600 0;
+#X obj 261 114 hsl 128 15 -1 1 0 1 empty empty empty -2 -6 0 8 #000000 #fc9000 #000000 6500 0;
 #X floatatom 258 135 5 0 0 0 - - - 0;
 #X obj 258 39 inlet;
 #X text 250 10 dry/wet;
-#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 6600 1;
+#X obj 396 61 vsl 20 128 -99 18 0 1 \$0-gain empty gain -7 -18 0 14 #fca85c #000000 #000000 10800 1;
 #X floatatom 397 197 5 0 0 1 _db - - 0;
 #X obj 105 311 outlet;
 #X obj 242 311 outlet;
