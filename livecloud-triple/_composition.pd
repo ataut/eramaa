@@ -1,4 +1,4 @@
-#N canvas 766 397 713 278 12;
+#N canvas 757 397 713 278 12;
 #N canvas 63 388 932 401 sendall 0;
 #X obj 26 17 r sendall;
 #X obj 26 41 route density metro freeze stretch stretchvar pos posvar dur durvar transp transpvar pitchquant, f 96;
@@ -57,7 +57,7 @@
 #X text 592 45 then -3dB;
 #X text 592 67 C# -9dB return to drone;
 #X restore 991 349 pd more-examples;
-#X restore 129 14 pd template;
+#X restore 133 14 pd template;
 #N canvas 36 444 918 484 drone 0;
 #X obj 206 9 inlet;
 #X obj 206 33 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -137,7 +137,7 @@
 #X connect 1 0 2 0;
 #X restore 409 44 pd figure;
 #X obj 49 39 nanokontrol;
-#N canvas -45 422 1470 559 mappings 0;
+#N canvas 0 369 1470 559 mappings 1;
 #N canvas 23 131 1378 322 viola 0;
 #X obj 23 16 inlet;
 #X obj 23 41 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -385,7 +385,7 @@
 #X connect 83 0 65 0;
 #X restore 49 102 pd mappings;
 #X f 12;
-#N canvas 0 157 1470 771 mappings-bu 1;
+#N canvas 0 157 1470 771 mappings-bu 0;
 #X floatatom 270 601 5 0 0 0 - - - 0;
 #X obj 287 648 m_scale 0 1 0 100;
 #X floatatom 287 672 5 0 0 0 - - - 0;
@@ -907,6 +907,7 @@
 #X connect 212 0 210 0;
 #X restore 56 141 pd mappings-bu;
 #X obj 49 77 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 134 39 nanokontrol2;
 #X connect 3 0 2 0;
 #X connect 4 0 5 0;
 #X connect 6 0 7 0;
