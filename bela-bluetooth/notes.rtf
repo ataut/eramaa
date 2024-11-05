@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Updating btmidid
+\f1\b0 \
+systemctl stop btmidid\
+systemctl disable btmidid\
+systemctl status btmidid\
+\
+https://gitlab.com/with-lasers-clients/atau_tanaka/btmidid\
+\
+From host scp /Users/atau/Downloads/btmidid-1.1.1.zip root@bela.local:/root/tmp/\
+unzip btmidid-1.1.1.zip\
+cd btmimdid-1.1.1/\
+\
+mkdir build\
+cd build\
+cmake ..\
+cmake --build .\
+\
+./btmidid -V\
+(set date and time) \
+make install\
+\
+It will be installed here\
+/usr/local/bin/btmidid\
+to verify\
+root@bela:~# pwd\
+/root\
+root@bela:~# btmidid -V\
+btmidid - Bluetooth MIDI Connection Daemon\
+version 1.1.1\
+\
+\'97\'97\
+\
+https://gitlab.com/with-lasers-clients/atau_tanaka/midiwdd\
+scp /Users/atau/Downloads/midiwdd-1.0.0.zip root@bela.local:/root/tmp/\
+unzip midiwdd-1.0.0.zip\
+cd midiwdd\
+mkdir build\
+cd build\
+cmake ..\
+(make sure oscpack is in lib)\
+cmake \'97build .\
+./midiwdd -V\
+make install\
+cd ~\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 midiwdd -V\
+\
+(specific this time)\
+ls ~/config\
+\
+mkdir ble-midi\
+mv config/ ble-midi/\
+mkdir locks\
+mkdir logs\
+root@bela:~/ble_midi# ls\
+config  locks  logs\
+\
+~/tmp/btmidid-1.1.1# cat service/btmidid.conf\
+\
+lockFile	/root/ble_midi/locks/btmidid.lock\
+(notes osc address and port of initiator of connection)\
+interval (ms) 250 (checks)\
+oscPing 20 (number of intervals for reporting back status over OSC (20 @250 = 5 sec)\
+but panic will go immediately\
+\
+eventLogFile	/root/ble_midi/logs/\
+\
+\'97\
+cp service/btmidid.conf ~/ble_midi/config/\
+\
+nano btmidid.config\
+\
+\'97\'97\
+Daemon\
+~/tmp/btmidid-1.1.1\
+cp service/btmidid.service /lib/systemd/system/\
+\
+cat /lib/systemd/system/btmidid.service\
+\
+from ~/tmp/\
+cp midiwdd-1.0.0/service/midiwdd.service /lib/systemd/system/\
+\
+cd /lib/systemd/\
+root@bela:/lib/systemd# cat system/midiwdd.service\
+\
+\'97\
+enable the services\
+systemctl enable btmidid\
+systemctl enable midiwdd\
+systemctl status btmidid\
+\
+\'97\
+OSC\
+OSC-route /wd_status /wd_PANIC\
+\
+\
+\'97\'97\
+to turn off internet sharing on Bela\
+https://learn.bela.io/using-bela/bela-techniques/connecting-to-wifi/#sharing-internet-over-usb-with-bela-mac-os-x\
+\
+\'97\
+\
+Internet sharing needs to be OFF on Mac\
+\
+\
+\
+}
