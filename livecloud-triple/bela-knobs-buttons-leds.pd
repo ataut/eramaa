@@ -188,7 +188,7 @@
 #X text 280 200 DEBUG;
 #X msg 67 193 20;
 #X text 182 220 click to operate patch manually, f 19;
-#X obj 259 60 inlet;
+#X obj 968 178 inlet;
 #N canvas 3 520 450 396 led3 0;
 #X floatatom 43 85 5 0 0 0 - - - 0;
 #X obj 43 134 i;
@@ -392,17 +392,18 @@
 #X connect 10 0 1 0;
 #X connect 12 0 0 0;
 #X restore 526 104 pd 4way-led;
-#X obj 345 60 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 345 111 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 345 35 loadbang;
 #X obj 613 60 inlet;
 #X obj 526 60 inlet;
 #X obj 711 60 inlet;
 #X obj 711 104 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X text 740 103 report knob values;
-#X obj 399 60 inlet;
+#X obj 358 60 inlet;
 #X text 413 36 BLE status;
 #X obj 442 60 inlet;
 #X obj 484 60 inlet;
+#X obj 401 60 inlet;
 #X connect 0 0 20 1;
 #X connect 9 0 15 0;
 #X connect 11 0 12 0;
@@ -440,6 +441,7 @@
 #X connect 40 0 36 0;
 #X connect 41 0 42 0;
 #X connect 42 0 20 9;
-#X connect 44 0 3 1;
+#X connect 44 0 37 0;
 #X connect 46 0 3 2;
 #X connect 47 0 3 3;
+#X connect 48 0 3 1;
