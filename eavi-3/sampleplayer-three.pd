@@ -1,7 +1,7 @@
 #N canvas 30 116 1440 812 12;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array playobject 361392 float 0;
-#X coords 0 1 361391 -1 200 140 1;
+#X array playobject 523766 float 0;
+#X coords 0 1 523765 -1 200 140 1;
 #X restore 331 445 graph;
 #N canvas 822 445 533 413 sampleloader 0;
 #X obj 144 49 inlet;
@@ -65,8 +65,8 @@
 #X obj 561 96 inlet;
 #X obj 561 57 loadbang;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array playobject2 271255 float 0;
-#X coords 0 1 271254 -1 200 140 1 0 0;
+#X array playobject2 523766 float 0;
+#X coords 0 1 523765 -1 200 140 1 0 0;
 #X restore 775 448 graph;
 #X floatatom 610 258 5 0 0 0 - - - 0;
 #X msg 610 236 0;
@@ -210,11 +210,10 @@
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
 #X connect 30 1 28 0;
-#X connect 30 1 4 0;
 #X connect 30 1 56 0;
-#X connect 30 1 81 0;
-#X connect 30 1 39 0;
 #X connect 30 1 65 0;
+#X connect 30 1 6 0;
+#X connect 30 1 81 0;
 #X connect 31 0 13 0;
 #X connect 31 0 42 0;
 #X connect 31 0 67 0;
