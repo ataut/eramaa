@@ -5,7 +5,11 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11740\viewh15260\viewkind0
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 amidi -d -p hw:1,0
+\f0\fs24 \cf0 amidi -l\
+aseqdump -p 128\
+aconnect -lio\
+\
+amidi -d -p hw:1,0
 \f1\b \
 \
 Updating btmidid
