@@ -620,7 +620,7 @@
 #X restore 46 15 pd credits;
 #X obj 244 249 vsl 16 100 0 1 0 0 empty empty empty 0 -9 0 12 #c6ffc7 #000000 #000000 0 1;
 #X obj 265 249 vsl 16 100 0 1 0 0 empty empty empty 0 -9 0 12 #c6ffc7 #000000 #000000 0 1;
-#N canvas 0 453 1470 475 mappings 0;
+#N canvas 0 453 1470 475 mappings 1;
 #N canvas 63 100 1235 654 presets 0;
 #X msg 35 157 \; play-cloud 0 1000 1000 -400;
 #X msg 35 205 \; play-cloud 0 1000 500 -400;
@@ -3010,7 +3010,7 @@
 #X obj 101 192 hsl 64 16 0 1 0 0 empty empty smooth\ 2 -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
 #X obj 191 157 hsl 64 16 0 1 0 0 empty empty EMG3\ gain -2 -10 0 12 #c6feff #000000 #000000 0 1;
 #X obj 190 192 hsl 64 16 0 1 0 0 empty empty smooth\ 3 -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
-#N canvas 90 464 1118 464 cuelist 1;
+#N canvas 90 464 1118 464 cuelist 0;
 #X msg 276 134 line 0;
 #X msg 195 134 auto;
 #X msg 233 134 stop;
@@ -3042,8 +3042,8 @@
 #X text 541 219 mycue-v 1 \; 60 mycue-v 2 \; 60 mycue-v 3 \; 120 mycue-v 4 \; 60 mycue-v 5 \; 180 mycue-v 6 \; 120 mycue-v 7 \; 120 mycue-v 8 \; 120 mycue-v 9 \;;
 #X text 663 219 mycue-b 1 \; 120 mycue-b 2 \; 60 mycue-b 3 \; 60 mycue-b 4 \; 60 mycue-b 5 \; 120 mycue-b 6 \; 120 mycue-b 7 \; 120 mycue-b 8 \; 180 mycue-b 9 \;;
 #X text 779 219 mycue-p 1 \; 180 mycue-p 2 \; 30 mycue-p 3 \; 30 mycue-p 4 \; 60 mycue-p 5 \; 240 mycue-p 6 \; 120 mycue-p 7 \; 60 mycue-p 8 \; 60 mycue-p 9 \;;
-#X obj 195 33 inlet;
-#X obj 392 57 inlet;
+#X obj 235 19 inlet;
+#X obj 394 33 inlet;
 #X connect 0 0 19 0;
 #X connect 0 0 17 0;
 #X connect 0 0 23 0;
@@ -3064,8 +3064,8 @@
 #X connect 15 0 19 0;
 #X connect 15 0 17 0;
 #X connect 15 0 23 0;
-#X connect 28 0 4 0;
-#X connect 29 0 12 0;
+#X connect 28 0 7 0;
+#X connect 29 0 14 0;
 #X restore 413 68 pd cuelist;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array doublebuf4 220500 float 0;
