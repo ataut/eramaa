@@ -3011,7 +3011,7 @@
 #X obj 191 157 hsl 64 16 0 1 0 0 empty empty EMG3\ gain -2 -10 0 12 #c6feff #000000 #000000 0 1;
 #X obj 190 192 hsl 64 16 0 1 0 0 empty empty smooth\ 3 -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
 #N canvas 90 464 1118 464 cuelist 0;
-#X msg 276 134 line 0;
+#X msg 274 133 line 0;
 #X msg 195 134 auto;
 #X msg 233 134 stop;
 #X text 275 115 rewind;
