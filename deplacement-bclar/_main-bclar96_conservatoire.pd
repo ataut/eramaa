@@ -137,9 +137,10 @@
 #X text 314 133 amplification;
 #X obj 315 110 + 1;
 #X obj 315 86 * 20;
-#X obj 28 136 bendin 3;
-#X obj 109 136 bendin 4;
 #X text 18 30 P019 uses channels 2 and 3 on bendin 3 and 4;
+#X text 11 62 Using 1 (bendin2) and 2 (bendin3) now;
+#X obj 28 136 bendin 2;
+#X obj 109 136 bendin 3;
 #X connect 0 0 13 0;
 #X connect 1 0 14 0;
 #X connect 2 0 1 0;
@@ -160,8 +161,8 @@
 #X connect 21 0 8 3;
 #X connect 23 0 21 0;
 #X connect 24 0 23 0;
-#X connect 25 0 3 0;
-#X connect 26 0 4 0;
+#X connect 27 0 3 0;
+#X connect 28 0 4 0;
 #X coords 0 469 1 468 85 60 0;
 #X restore 684 78 pd emg;
 #X f 7;
